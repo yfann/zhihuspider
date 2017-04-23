@@ -40,7 +40,8 @@ ROBOTSTXT_OBEY = False
 
 # Override the default request headers:
 DEFAULT_REQUEST_HEADERS = {
-'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'
+'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+#'authorization': 'Bearer Mi4wQUFBQUFSZ2tBQUFBTUlJLXFFR21DeGNBQUFCaEFsVk5qNk1qV1FDSGRlS3JYTXhOUmRFTTR1SDdRUkNjSFFwQ3F3|1492915985|b9fd26e615e6ff5e8763cb2b7c3dfec0f1a9f81a'
 }
 
 # Enable or disable spider middlewares
@@ -66,6 +67,11 @@ DEFAULT_REQUEST_HEADERS = {
 #ITEM_PIPELINES = {
 #    'zhihu.pipelines.ZhihuPipeline': 300,
 #}
+ITEM_PIPELINES = {
+    'zhihu.pipelines.MongoPipeline': 300,
+    # 'scrapy_redis.pipelines.RedisPipeline': 301
+}
+
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See http://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -87,3 +93,5 @@ DEFAULT_REQUEST_HEADERS = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+MONGO_URI = 'localhost'
+MONGO_DATABASE = 'zhihu'
