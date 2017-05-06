@@ -41,7 +41,7 @@ ROBOTSTXT_OBEY = False
 # Override the default request headers:
 DEFAULT_REQUEST_HEADERS = {
 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
-#'authorization': 'Bearer Mi4wQUFBQUFSZ2tBQUFBTUlJLXFFR21DeGNBQUFCaEFsVk5qNk1qV1FDSGRlS3JYTXhOUmRFTTR1SDdRUkNjSFFwQ3F3|1492915985|b9fd26e615e6ff5e8763cb2b7c3dfec0f1a9f81a'
+'authorization': 'Bearer Mi4wQUFBQUFSZ2tBQUFBTUlJLXFFR21DeGNBQUFCaEFsVk5qNk1qV1FDSGRlS3JYTXhOUmRFTTR1SDdRUkNjSFFwQ3F3|1492915985|b9fd26e615e6ff5e8763cb2b7c3dfec0f1a9f81a'
 }
 
 # Enable or disable spider middlewares
@@ -94,4 +94,4 @@ ITEM_PIPELINES = {
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 MONGO_URI = 'localhost'
-MONGO_DATABASE = 'zhihu'
+MONGO_DATABASE = 'zhihuDB'
